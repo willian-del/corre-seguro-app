@@ -1,13 +1,13 @@
-import { Car, Bike, ShoppingBag, Package } from "lucide-react";
+import { Car, Bike, Package, Truck } from "lucide-react";
 
 const ForWho = () => {
   const apps = [
-    { icon: Car, name: "Uber", color: "text-primary" },
-    { icon: Car, name: "99", color: "text-accent" },
-    { icon: Bike, name: "iFood", color: "text-primary" },
-    { icon: ShoppingBag, name: "Rappi", color: "text-accent" },
-    { icon: Car, name: "inDrive", color: "text-primary" },
-    { icon: Package, name: "Loggi", color: "text-accent" },
+    { icon: Car, name: "Uber", color: "text-primary", type: "Carro" },
+    { icon: Car, name: "99", color: "text-accent", type: "Carro" },
+    { icon: Bike, name: "iFood", color: "text-primary", type: "Moto" },
+    { icon: Bike, name: "Rappi", color: "text-accent", type: "Moto" },
+    { icon: Car, name: "inDrive", color: "text-primary", type: "Carro" },
+    { icon: Truck, name: "Loggi", color: "text-accent", type: "Van/Moto" },
   ];
 
   return (
@@ -25,10 +25,15 @@ const ForWho = () => {
             {apps.map((app, index) => (
               <div
                 key={app.name}
-                className="flex flex-col items-center gap-3 p-6 rounded-xl bg-secondary hover:bg-primary/5 transition-all duration-300 hover:scale-110 animate-scale-in border-2 border-transparent hover:border-primary/20"
+                className="flex flex-col items-center gap-3 p-6 rounded-xl bg-secondary hover:bg-primary/5 transition-all duration-300 hover:scale-110 animate-scale-in border-2 border-transparent hover:border-primary/20 group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <app.icon className={`w-10 h-10 ${app.color}`} />
+                <div className="relative">
+                  <app.icon className={`w-12 h-12 ${app.color} transition-transform group-hover:scale-110`} />
+                  <span className="absolute -bottom-1 -right-1 text-[10px] font-bold bg-accent text-accent-foreground px-1.5 py-0.5 rounded-full">
+                    {app.type}
+                  </span>
+                </div>
                 <span className="text-sm font-semibold text-foreground">{app.name}</span>
               </div>
             ))}
