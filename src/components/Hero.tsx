@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield } from "lucide-react";
-import heroImage from "@/assets/hero-delivery.jpg";
+import { ArrowRight, Shield, Car, Bike } from "lucide-react";
+import heroImage from "@/assets/hero-dual.jpg";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Entregador em ação nas ruas da cidade"
+          alt="Motoristas de carro e entregadores de moto nas ruas da cidade - Corre Seguro protege os dois"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-hero" />
@@ -29,9 +29,20 @@ const Hero = () => {
             O parceiro certo pra te proteger no corre de todo dia
           </h1>
           
-          <p className="text-xl sm:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
+          <p className="text-xl sm:text-2xl text-primary-foreground/90 mb-4 leading-relaxed">
             Motoristas e entregadores de app merecem proteção de verdade. A gente cuida de você quando o perrengue aparece.
           </p>
+
+          <div className="flex items-center gap-6 mb-8">
+            <div className="flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary-foreground/20">
+              <Car className="w-5 h-5 text-primary-foreground" />
+              <span className="text-primary-foreground font-semibold">Motoristas</span>
+            </div>
+            <div className="flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary-foreground/20">
+              <Bike className="w-5 h-5 text-primary-foreground" />
+              <span className="text-primary-foreground font-semibold">Entregadores</span>
+            </div>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button variant="accent" size="lg" className="group">
