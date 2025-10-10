@@ -3,6 +3,13 @@ import { ArrowRight, Shield, Car, Bike } from "lucide-react";
 import heroImage from "@/assets/hero-dual.jpg";
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -45,11 +52,11 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="accent" size="lg" className="group">
+            <Button variant="accent" size="lg" className="group" onClick={() => scrollToSection('planos')}>
               Ver Planos
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary backdrop-blur-sm">
+            <Button variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary backdrop-blur-sm" onClick={() => scrollToSection('como-funciona')}>
               Como Funciona
             </Button>
           </div>
