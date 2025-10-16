@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <Shield className="w-8 h-8 text-primary" />
-              <span className="text-2xl font-bold text-foreground">Corre Seguro</span>
+              <span className="text-2xl font-bold text-foreground">Corre Legal</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               O parceiro certo pra te proteger no corre de todo dia. Proteção e suporte pensado para motoristas e entregadores de aplicativo.
@@ -70,7 +70,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2025 Corre Seguro. Todos os direitos reservados.
+            © 2025 Corre Legal. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">

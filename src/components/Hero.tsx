@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Motoristas de carro e entregadores de moto nas ruas da cidade - Corre Seguro protege os dois"
+          alt="Motoristas de carro e entregadores de moto nas ruas da cidade - Corre Legal protege os dois"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-hero" />
@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="flex items-center gap-2 mb-6">
             <Shield className="w-8 h-8 text-accent" />
             <span className="text-accent-foreground bg-accent px-4 py-1 rounded-full text-sm font-semibold">
-              Corre Seguro
+              Corre Legal
             </span>
           </div>
           

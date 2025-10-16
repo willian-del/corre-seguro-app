@@ -18,7 +18,7 @@ const ForWho = () => {
             Pra Quem é
           </h2>
           <p className="text-2xl text-foreground font-semibold mb-12">
-            Se você vive do corre, o <span className="text-primary">Corre Seguro</span> é pra você
+            Se você vive do corre, o <span className="text-primary">Corre Legal</span> é pra você
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">

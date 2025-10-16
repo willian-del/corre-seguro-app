@@ -11,7 +11,7 @@ const Testimonials = () => {
       role: "Motorista há 3 anos",
       location: "São Paulo/SP",
       image: carlosImage,
-      quote: "Levei uma multa errada e o pessoal do Corre Seguro me ajudou a resolver rapidinho. Agora fico tranquilo pra rodar.",
+      quote: "Levei uma multa errada e o pessoal do Corre Legal me ajudou a resolver rapidinho. Agora fico tranquilo pra rodar.",
     },
     {
       name: "Fernanda",
