@@ -11,10 +11,10 @@ const ForWho = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background" aria-labelledby="for-who-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+          <h2 id="for-who-heading" className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
             Pra Quem é
           </h2>
           <p className="text-2xl text-foreground font-semibold mb-12">

@@ -36,10 +36,10 @@ const Problems = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary">
+    <section className="py-20 bg-secondary" aria-labelledby="problems-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+          <h2 id="problems-heading" className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
             Os Problemas que a Gente Resolve
           </h2>
           <p className="text-lg text-muted-foreground">

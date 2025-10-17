@@ -11,16 +11,19 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Motoristas de carro e entregadores de moto nas ruas da cidade - Corre Legal protege os dois"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-hero" />
-      </div>
+    <header>
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={heroImage}
+            alt="Motoristas de carro e entregadores de moto trabalhando nas ruas - Corre Legal oferece proteção jurídica completa"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+          />
+          <div className="absolute inset-0 bg-gradient-hero" />
+        </div>
 
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -65,7 +68,8 @@ const Hero = () => {
 
       {/* Decorative Elements */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10" />
-    </section>
+      </section>
+    </header>
   );
 };
 

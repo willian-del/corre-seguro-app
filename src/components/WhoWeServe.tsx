@@ -4,10 +4,10 @@ import deliveryImage from "@/assets/hero-delivery.jpg";
 
 const WhoWeServe = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-secondary/20">
+    <section className="py-20 bg-gradient-to-b from-background to-secondary/20" aria-labelledby="who-we-serve-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
+          <h2 id="who-we-serve-heading" className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
             Feito Para Você
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -21,8 +21,9 @@ const WhoWeServe = () => {
             <div className="aspect-[4/3] overflow-hidden">
               <img
                 src={carDriverImage}
-                alt="Motorista de aplicativo dirigindo carro nas ruas da cidade"
+                alt="Motorista de aplicativo profissional dirigindo carro com proteção jurídica Corre Legal"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/50 to-transparent" />
             </div>
@@ -58,8 +59,9 @@ const WhoWeServe = () => {
             <div className="aspect-[4/3] overflow-hidden">
               <img
                 src={deliveryImage}
-                alt="Entregador de moto em ação nas ruas da cidade"
+                alt="Entregador de aplicativo trabalhando com moto - proteção jurídica especializada Corre Legal"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/50 to-transparent" />
             </div>

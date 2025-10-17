@@ -46,16 +46,16 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="planos" className="py-20 bg-gradient-primary relative overflow-hidden">
+    <section id="planos" className="py-20 bg-gradient-primary relative overflow-hidden" aria-labelledby="pricing-heading">
       {/* Decorative Elements */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div className="absolute top-0 left-0 w-96 h-96 bg-accent rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary-glow rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 id="pricing-heading" className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-6">
             Nossos Planos
           </h2>
           <p className="text-lg text-primary-foreground/90">
@@ -106,6 +106,7 @@ const Pricing = () => {
                 variant={plan.highlighted ? "accent" : "default"}
                 className="w-full"
                 size="lg"
+                aria-label={`Assinar plano ${plan.name} por R$ ${plan.price} por mês`}
               >
                 Assinar {plan.name}
               </Button>
